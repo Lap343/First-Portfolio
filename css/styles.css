@@ -7,9 +7,7 @@ a{
 a:hover {
     text-decoration: none;
     color: #FFF;
-}
-a:visited {
-    color: #FFF;
+    background-color: rgb(168, 168, 168);
 }
 .main {
     background-color: #000;
@@ -25,6 +23,7 @@ a:visited {
     top: 20vh;
     width: 10vw;
     font-size: 2em;
+    z-index: 2;
 }
 .nav-units {
     margin-bottom: 2em;
@@ -53,9 +52,33 @@ a:visited {
     position: relative;
     bottom: 22em;
 }
-#about {
-}
-#projects {
-}
-#contact {
-}
+
+/* Phone Changes */
+@media only screen and (max-width: 600px) {
+    a:hover {
+        background-color: rgba(255, 255, 255, 0);
+    }
+    .nav{
+        font-size: 1em;
+        flex-direction: row;
+        justify-content: space-between;
+        top: 0;
+        width: 100%;
+        background-color: #000;
+    }
+    .nav>a {
+        padding-top: 2vh;
+        margin-bottom: 2vh;
+    }
+    .contant {
+        margin-bottom: 1px;
+    }
+    .bg {
+        width: 90vw;
+        margin-left: 3vw;
+    }
+    .content {
+        position: relative;
+        bottom: 0;
+    }
+  }
