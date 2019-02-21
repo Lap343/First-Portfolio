@@ -41,6 +41,8 @@ a:hover {
     font-size: 5em;
     animation: 1.5s ease-in 0s 1 slideInFromLeft;
 }
+
+/* Main Content */
 .bg {
     background-color: #FFF;
     height: 100vh;
@@ -52,6 +54,27 @@ a:hover {
     position: relative;
     bottom: 22em;
 }
+
+/* About Content */
+.about-header {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    height: 20em;
+    width: 100%;
+}
+.about-header-img{
+    width: 10em;
+    margin-right: 0;
+}
+.about-header-h1 {
+    display: inline;
+}
+/* Projects content */
+
+
+/* Contact Content */
+
 
 /* Phone Changes */
 @media only screen and (max-width: 600px) {
@@ -80,5 +103,10 @@ a:hover {
     .content {
         position: relative;
         bottom: 0;
+    }
+
+    /* about */
+    .about-header-h1 {
+        display: block;
     }
   }
