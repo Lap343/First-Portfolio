@@ -1,18 +1,11 @@
 body {
-    background-color: #000;
+    background-color: #086AAA;
 }
 a{
     color: #FFF;
 }
-a:hover {
-    text-decoration: none;
-    color: #FFF;
-}
-a:visited {
-    color: #FFF;
-}
 .main {
-    background-color: #000;
+    background-color: #086AAA;
     color: #FFF;
     height: 100vh;
     display: flex;
@@ -25,6 +18,12 @@ a:visited {
     top: 20vh;
     width: 10vw;
     font-size: 2em;
+    z-index: 2;
+}
+nav>a:hover {
+    text-decoration: none;
+    color: #000;
+    background-color: rgb(168, 168, 168);
 }
 .nav-units {
     margin-bottom: 2em;
@@ -42,9 +41,11 @@ a:visited {
     font-size: 5em;
     animation: 1.5s ease-in 0s 1 slideInFromLeft;
 }
+
+/* Main Content */
 .bg {
     background-color: #FFF;
-    height: 100vh;
+    /* height: 100vh; */
     width: 70vw;
     color: #000;
     margin-left: 15vw;
@@ -53,9 +54,134 @@ a:visited {
     position: relative;
     bottom: 22em;
 }
-#about {
+
+/* About Content */
+.about-header {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    margin-bottom: 3vh;
 }
-#projects {
+.about-header-img{
+    width: 10em;
+    margin: 2em 2em 0em 2em;
+    padding: 1vh;
+    border: 1px solid black;
 }
-#contact {
+.about-header-h {
+    display: flex;
+    flex-direction: column;
 }
+.about-header-n{
+    margin-bottom: 0;
+}
+.about-header-d {
+    margin-top: 0;
+}
+.about-main {    
+    padding: 0em 2em 0em 2em;
+}
+.knowledge {
+    margin-bottom: 10em;
+}
+.knowledge-h {
+    margin-left: 1em;
+}
+.pg-icon {
+    height: 17vh;
+    width: 10vw;
+    margin-top: 2em;
+    margin-bottom: 10vh;
+}
+.css {
+    width: 7vw;
+}
+.knowledge-u, .knowledge-i {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+/* Projects content */
+.projects-header {
+    text-align: center;
+    padding: 1em 0em 1em 0em;
+}
+.projects-icons {
+    display: flex;
+    flex-direction: column;
+}
+.prg-icon {
+    height: auto;
+    width: 30vw;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.amigos-icon {
+    width: 24vw;
+    margin-bottom: 5vh;
+}
+.pet-store-icon {
+    margin-bottom: 10vh;
+}
+/* Contact Content */
+.contact-header {
+    text-align: center;
+    padding: 1em 0em 1em 0em;
+}
+.email-h {
+    margin-left: 15vw;
+    margin-bottom: 5vh;
+}
+.email {
+    font-size: 2.5em;
+    margin-left: 15vw;    
+    margin-bottom: 10vh;
+}
+.social-h {
+    margin-left: 15vw;
+}
+.social-icons {
+    padding-bottom: 10vh;
+    display: flex;
+    justify-content: space-evenly;
+}
+/* Phone Changes */
+@media only screen and (max-width: 750px) {
+    a:hover {
+        background-color: rgba(255, 255, 255, 0);
+    }
+    .nav{
+        font-size: 1em;
+        flex-direction: row;
+        justify-content: space-between;
+        top: 0;
+        width: 100%;
+        background-color: #000;
+    }
+    .nav>a {
+        padding-top: 2vh;
+        margin-bottom: 2vh;
+    }
+    .contant {
+        margin-bottom: 1px;
+    }
+    .bg {
+        width: 90vw;
+        margin-left: 3vw;
+    }
+    .content {
+        position: relative;
+        bottom: 0;
+    }
+
+    /* about */
+    .mobile {
+        flex-direction: column;
+    }
+    .mobile-icons {
+        width: 25vw;
+        margin-left: auto;
+        margin-right: auto;
+    }
+  }
