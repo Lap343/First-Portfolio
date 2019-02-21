@@ -176,6 +176,9 @@ nav>a:hover {
     }
 
     /* about */
+.email {
+    font-size: 2em;
+}
     .mobile {
         flex-direction: column;
     }
